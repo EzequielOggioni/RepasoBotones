@@ -1,0 +1,14 @@
+<p>botones works!
+
+<!--  muestra el valor de tipo -->
+{{this.boton.tipo}}</p>
+<!--  llama al manejador de eventos "cambiarTipo"  -->
+<input type="button" (click)="this.boton.cambiarTipo()" value="Cambiar" >
+<!--  genera la etiqueta de acuerdo al valor de la variable -->
+<input [type]="this.boton.tipo" >
+
+<!-- ngModel es un bindeo bidireccional -->
+<p> input type="text" [(ngModel)]="this.boton.tipo" value="text" </p>
+<input type="text" [(ngModel)]="this.boton.tipo" value="text" >
+<p>input [value]="this.boton.tipo"</p>
+<input [value]="this.boton.tipo" >
